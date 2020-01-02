@@ -45,7 +45,7 @@ class Attendance extends Component {
             </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=>console.log("next Tapped")} style={{height:29,width:265,backgroundColor:'#6EF31A',shadowColor: "#000",alignContent:'flex-start',justifyContent:'center',alignItems:'flex-start',marginTop:15,shadowOffset: {width: 0,height: 3,},shadowOpacity: 0.27,shadowRadius: 4.65,elevation: 6,}}>
+        <TouchableOpacity onPress={()=>this.props.navigation.navigate('Review')} style={{height:29,width:265,backgroundColor:'#6EF31A',shadowColor: "#000",alignContent:'flex-start',justifyContent:'center',alignItems:'flex-start',marginTop:15,shadowOffset: {width: 0,height: 3,},shadowOpacity: 0.27,shadowRadius: 4.65,elevation: 6,}}>
             <Text style={{color:'white',alignSelf:'center'}}>
                 Next
             </Text>

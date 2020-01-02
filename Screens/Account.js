@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 
 class Account extends Component {
+  static navigationOptions = { header: null }
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +12,10 @@ class Account extends Component {
   render() {
     return (
       <View>
-        <Text> Account </Text>
+        <View >
+            <Image source={require('../assets/left-arrow.png')}/>
+            <Image style={{height:'80%',width:'100%'}} source={require('../assets/profilePic.png')}/>
+        </View>
       </View>
     );
   }
