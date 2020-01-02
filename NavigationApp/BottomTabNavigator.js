@@ -10,8 +10,9 @@ import Curriculam from '../Screens/Home/Curriculam'
 import Diary from '../Screens/Home/Diary'
 import Institute from '../Screens/Home/Institute'
 import Forum from '../Screens/Home/Forum'
-import ClassRoom from '../Screens/ClassRoom'
+import ClassRoom from '../Screens/Classroom/ClassRoom'
 import Account from '../Screens/Account'
+import Attendance from '../Screens/Classroom/Attendance';
 
 
 const home=createStackNavigator({
@@ -22,10 +23,15 @@ const home=createStackNavigator({
   Institute:{screen:Institute},
   Forum:{screen:Forum},
 })
+
+const classroom=createStackNavigator({
+  ClassRoom:{screen:ClassRoom},
+  Attendance:{screen:Attendance}
+})
 const BottomTabNavigator = createBottomTabNavigator(
   {
     Home: { screen: home },
-    ClassRoom:{screen:ClassRoom},
+    ClassRoom:{screen:classroom},
     Account:{screen:Account}
     
     
