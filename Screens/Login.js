@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text,Image,TouchableOpacity,SafeAreaView} from 'react-native';
 import { TextInput } from 'react-native-paper';
 class Login extends Component {
+  static navigationOptions = { header: null }
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +39,12 @@ class Login extends Component {
 
               <Text style={{color:'#6EF31A',alignSelf:'center'}} >Forgot Password?</Text>
               <Text style={{alignSelf:'center'}}>{"New to treetor?" }</Text>
+              <TouchableOpacity onPress={()=>{
+                this.props.navigation.navigate('Signup')
+              }}>
               <Text  style={{color:'#6EF31A',alignSelf:'center'}}>Register</Text>
+
+              </TouchableOpacity>
           </View>
          
           <View>
