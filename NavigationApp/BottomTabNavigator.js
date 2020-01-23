@@ -14,6 +14,9 @@ import ClassRoom from '../Screens/Classroom/ClassRoom'
 import Account from '../Screens/Account'
 import Attendance from '../Screens/Classroom/Attendance';
 import Review from '../Screens/Classroom/Review';
+import AllInstitutes from '../Screens/Home/AllInstitutes'
+import Pending from '../Screens/Home/Pending'
+
 
 
 const home=createStackNavigator({
@@ -23,6 +26,8 @@ const home=createStackNavigator({
   Diary:{screen:Diary},
   Institute:{screen:Institute},
   Forum:{screen:Forum},
+  AllInstitutes:{screen:AllInstitutes},
+  Pending:{screen:Pending}
 })
 
 const classroom=createStackNavigator({
@@ -89,4 +94,4 @@ const BottomTabNavigator = createBottomTabNavigator(
   }
 );
 
-export default BottomTabNavigator;
+export default createAppContainer( BottomTabNavigator);

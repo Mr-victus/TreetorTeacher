@@ -13,8 +13,8 @@ class Account extends Component {
     return (
       <View>
         <View style={{flex:1,alignContent:'center'}} >
-            <ImageBackground source={require('../assets/profilePic.png')} >
-            <View style={{opacity:0.5,backgroundColor:'black',marginTop:233,alignSelf:'flex-end',width:'100%',alignItems:'center'}}>
+            <ImageBackground style={{flex:1,height:'100%',width:'100%'}} source={require('../assets/profilePic.png')} >
+            {/* <View style={{opacity:0.5,backgroundColor:'black',marginTop:233,alignSelf:'flex-end',width:'100%',alignItems:'center'}}>
               <Text style={{color:'white',fontWeight:'bold'}}>
                 A J Loren
               </Text>
@@ -24,10 +24,10 @@ class Account extends Component {
               <Text style={{color:'white',fontWeight:'bold'}}>
                 9876543210
               </Text>
-            </View>
+            </View> */}
 
             </ImageBackground>
-            <View style={{justifyContent:'space-between',alignContent:'space-between'}}>
+            {/* <View style={{justifyContent:'space-between',alignContent:'space-between'}}>
 
             
           <View style={{flexDirection:'row',justifyContent: 'center',alignItems:'center',backgroundColor:'#5AFF15',width:300,height:30,alignSelf:'center'}}>
@@ -56,10 +56,10 @@ class Account extends Component {
             </Text>
             <Image style={{height:10,width:10,marginLeft:200}} source={require('../assets/morearrow.png')}/>
             </View>
-            </View>
+            </View>*/}
 
             
-        </View>
+        </View> 
       </View>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text,Image } from 'react-native';
+import { View, Text,Image,TouchableOpacity } from 'react-native';
 
 
 
@@ -44,7 +44,11 @@ class Home extends Component {
             </View>
             <Text>Rank</Text>
           </View>
+          <TouchableOpacity onPress={()=>{
+            this.props.navigation.navigate('AllInstitutes')
+          }
 
+          }>
           <View style={{alignContent:'center',justifyContent:'center',alignItems:'center'}}>
             {/* <View style={{backgroundColor:'white',height:'90',width:'90'}}>
                 <Image source={require('../../assets/rank.png')}/>
@@ -56,6 +60,8 @@ class Home extends Component {
             </View>
             <Text>Institute</Text>
           </View>
+          </TouchableOpacity>
+         
 
         </View>
         <View style={{flexDirection:'row',justifyContent:'space-evenly',alignContent:'center',alignItems:'center'}}>
